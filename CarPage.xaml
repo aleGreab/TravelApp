@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarTravel.CarPage"
+             Title="Cars Page">
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Margin="10">
+        <HorizontalStackLayout Spacing="10">
+            <Image Source="car.jpg" SemanticProperties.Description="Car List" HeightRequest="64"/>
+            <Label FontSize="22" FontAttributes="Bold" Text="CARS GALLERY" VerticalOptions="Center" TextColor="#4063e3"/>
+        </HorizontalStackLayout>
+
+        <Label Text="Enjoy your car gallery" Margin="15" FontSize="14" TextColor="Gray" HorizontalOptions="Center"/>
+
+        <Image x:Name="photos" Source="mercedes.jpg" HeightRequest="400" Margin="20" Aspect="AspectFit"
+               SemanticProperties.Description="gallery">
+        </Image>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Padding="10">
+                <Button Text="Prev" Clicked="PrevImg" CornerRadius="35" WidthRequest="100" Background="#4063e3" TextColor="LightGrey" Margin="10"/>
+                <Button Text="Next" Clicked="NextImg" CornerRadius="35" WidthRequest="100" Background="#4063e3" TextColor="LightGrey" Margin="10"/>
+        </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
