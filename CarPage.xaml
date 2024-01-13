@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarTravel.CarPage"
+             Title="CarPage">
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Margin="10">
+        <HorizontalStackLayout Spacing="10">
+            <Image Source="car.jpg" SemanticProperties.Description="Car List" HeightRequest="64" />
+            <Label FontSize="22" FontAttributes="Bold" Text="Car Lists" VerticalOptions="End" />
+        </HorizontalStackLayout>
+        <Label Text="This app will help you to manage your car lists" />
+
+        <Image x:Name="imgScale" Source="mercedes.jpg" 
+               SemanticProperties.Description="car" HeightRequest="100"
+               Margin="50"
+               HorizontalOptions="Start" VerticalOptions="Start">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedForScaleAnimation"/>
+            </Image.GestureRecognizers>
+        </Image>
+        
+        <Image x:Name="img1Scale" Source="s_class.jpg"
+               SemanticProperties.Description="car" HeightRequest="100"
+               Margin="50"
+               HorizontalOptions="Start" VerticalOptions="Start">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedForScaleAnimation1"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image x:Name="img2Scale" Source="amg_a35.jpg"
+               SemanticProperties.Description="car" HeightRequest="100"
+               Margin="50"
+               HorizontalOptions="Start" VerticalOptions="Start">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedForScaleAnimation2"/>
+            </Image.GestureRecognizers>
+        </Image>
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
