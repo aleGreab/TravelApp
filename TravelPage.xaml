@@ -5,14 +5,14 @@
              Title="Travel Page">
     
     <ScrollView>
-        <VerticalStackLayout Spacing="10" Margin="10">
+    <VerticalStackLayout Spacing="10" Margin="10">
             
         <HorizontalStackLayout Spacing="10">
             <Image Source="car_road.jpg" SemanticProperties.Description="Travel destinations gallery" HeightRequest="64" />
-            <Label FontSize="22" FontAttributes="Bold" Text="Travel gallery" VerticalOptions="End" TextColor="#9e3f16" />
+            <Label FontSize="22" FontAttributes="Bold" Text="Travel gallery" VerticalOptions="Center" TextColor="#9e3f16" />
         </HorizontalStackLayout>
         
-        <Label Text="There are your best trip pictures. Enjoy your moment!" TextColor="Gray" FontSize="14"/>
+        <Label Text="There are your best trip pictures. Enjoy your moment!" TextColor="Gray" FontSize="14" HorizontalOptions="Center"/>
 
         <Image x:Name="img" Source="boats_venice.jpg" HeightRequest="400" Margin="20" Aspect="AspectFit"
                  SemanticProperties.Description="gallery">
@@ -26,6 +26,13 @@
             <Button Text="Prev" Clicked="PrevImg" CornerRadius="35" WidthRequest="100" Background="Brown" TextColor="LightGrey" Margin="10"/>
             <Button Text="Next" Clicked="NextImage" CornerRadius="35" WidthRequest="100" Background="Brown" TextColor="LightGrey" Margin="10"/>
         </HorizontalStackLayout>
+
+        <StackLayout>
+            <Entry x:Name="photoUrl"
+                   Placeholder="Enter photo URL"/>
+                <Button Text="Add photo" CornerRadius="10" WidthRequest="90" Margin="15" Padding="10" 
+                        BackgroundColor="#0a9115" Clicked="Add_Url"/>
+        </StackLayout>
 
         </VerticalStackLayout>
     </ScrollView>

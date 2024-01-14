@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:CarTravel"
     Shell.FlyoutBehavior="Disabled"
     Title="CarTravel">
-    
+
 
     <TabBar>
         <ShellContent Title="Welcome Page" ContentTemplate="{DataTemplate local:MainPage}"/>
