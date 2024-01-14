@@ -21,8 +21,5 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Grid Margin="20">
-            <Button Text="Add/Choose place to add" MaximumWidthRequest="300" Clicked="OnChooseButtonClicked"/>
-        </Grid>
     </StackLayout>
 </ContentPage>

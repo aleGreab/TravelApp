@@ -15,7 +15,7 @@ public partial class CarPage : ContentPage
     {
         currentIndex++;
         if (currentIndex >= car_img.Count)
-        {
+    {
             currentIndex = 0;
         }
         photos.Source = ImageSource.FromFile(car_img[currentIndex]);
@@ -26,7 +26,7 @@ public partial class CarPage : ContentPage
         if (currentIndex < 0)
         {
             currentIndex = car_img.Count - 1;
-        }
+    }
         photos.Source = ImageSource.FromFile(car_img[currentIndex]);
     }
 }
