@@ -6,7 +6,7 @@ public partial class TravelPage : ContentPage
             "pisa_tower.jpg", "viena_intrare.jpg", "viena_targ.jpg", "cafe_paris.jpg", "flags.jpg", "gelato.jpg", "milan.jpg",
             "milan1.jpg", "rest.jpg", "trevi.jpg", "macarons.jpg"}; 
     private int currentIndex = 0;
-    public TravelPage()
+	public TravelPage()
 	{
 		InitializeComponent();
         img.Source = ImageSource.FromFile(images[currentIndex]);
@@ -33,5 +33,5 @@ public partial class TravelPage : ContentPage
     {
         await img.FadeTo(0.5, 300);
         await img.FadeTo(1);
-    }
+	}
 }

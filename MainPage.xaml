@@ -9,10 +9,10 @@
             Spacing="25">
             <Image Grid.Row="0"
                   x:Name="imgBot"
-                  Source="dotnet_bot.png"
-                  HeightRequest="185"
+                Source="dotnet_bot.png"
+                HeightRequest="185"
                   Margin="20"
-                  Aspect="AspectFit"
+                Aspect="AspectFit"
                   SemanticProperties.Description="dot net bot in a race car number eight" >
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedForBot"/>
